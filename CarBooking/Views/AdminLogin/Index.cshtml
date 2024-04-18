@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Adminpage</h1>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Stationary Store</title>
+</head>
+<body>
+    <h1>Welcome to Online Stationary Store</h1>
+
+    <h2>Admin Login</h2>
+    <form action="" method="post">
+        <label for="Username">Username:</label>
+        <input type="text" id="admin-username" name="Username" required><br><br>
+
+        <label for="Password">Password:</label>
+        <input type="password" id="admin-password" name="Password" required><br><br>
+
+        <input type="submit" value="Login as Admin">
+    </form>
+
+    @*<h2>Customer Login</h2>
+        <form action="/customer-login" method="post">
+            <label for="customer-username">Username:</label>
+            <input type="text" id="customer-username" name="customer-username" required><br><br>
+
+            <label for="customer-password">Password:</label>
+            <input type="password" id="customer-password" name="customer-password" required><br><br>
+
+            <input type="submit" value="Login as Customer">
+        </form>*@
+</body>
+<asp:GridView runat=""></asp:GridView>

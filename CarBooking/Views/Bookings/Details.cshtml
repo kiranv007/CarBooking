@@ -1,0 +1,58 @@
+﻿@model CarBooking.Models.Booking
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Booking</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BookingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookingAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookingAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarDetail.CarName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarDetail.CarName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerDetail.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerDetail.FirstName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BookingID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
